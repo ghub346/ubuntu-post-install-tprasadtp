@@ -1772,7 +1772,7 @@ deb https://desktop-download.mendeley.com/download/apt stable main"
 
   # Microsoft Keys
   # shellcheck disable=SC2235
-  if [[ ($AE_ARCH == "amd64") && ($AE_RUN_CONFIG_REPO_AZURECLI == "true" || ${AE_RUN_CONFIG_REPO_EDGE} == "true" ]]; then
+  if [[ ($AE_ARCH == "amd64") && ($AE_RUN_CONFIG_REPO_AZURECLI == "true") || ${AE_RUN_CONFIG_REPO_EDGE} == "true" ]]; then
     log_debug "Adding Microsoft keys."
     __add_repo_keys \
       --format "asc" \
