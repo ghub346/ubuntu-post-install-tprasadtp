@@ -45,6 +45,7 @@ config:
     spotify: true
     slack: true
     sublimetext: true
+    tailscale: true
     vivaldi: true
     vscode: true
     winehq: true
@@ -132,6 +133,7 @@ config:
         - teams
         # Sublime
         - sublime-text
+        - tailscale
         # From Universe in Ubuntu
         - apt-xapian-index
         # Non-free in debian, multiverse in Ubuntu(canonical partner repos)
