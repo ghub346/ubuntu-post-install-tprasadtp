@@ -2038,7 +2038,7 @@ deb https://desktop-download.mendeley.com/download/apt stable main"
         --file-prefix "tailscale" \
         --key-url https://pkgs.tailscale.com/stable/ubuntu/jammy.noarmor.gpg
 
-      if echo "deb [arch=amd64 signed-by=${AE_APT_KEYRINGS_DIR}/tailscale.gpg] https://pkgs.tailscale.com/ apt/stable/ #Tailscale" >${AE_APT_SOURCES_DIR}/tailscale.list; then
+      if echo "deb [arch=amd64 signed-by=${AE_APT_KEYRINGS_DIR}/tailscale.gpg] https://pkgs.tailscale.com/stable/ubuntu focal main #Tailscale" >${AE_APT_SOURCES_DIR}/tailscale.list; then
         log_success "OK"
       else
         log_error "Failed to add Tailscale repository"
